@@ -1,0 +1,26 @@
+name: Nightly HF Spaces Wakeup Call ⏰
+
+on:
+  schedule:
+    # Daily at 12:00 AM IST (18:30 UTC)
+    - cron: '30 18 * * *'
+  workflow_dispatch: # Manual trigger button to test anytime
+
+jobs:
+  ping-spaces:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping All Audio Spaces
+        run: |
+          echo "⏰ Sending Wakeup Call to HF Spaces..."
+          
+          # 1. Hindi Space Ping
+          curl -s -o /dev.null -w "%{http_code}" https://developer-yougesh-kavyanjali-hindi-backend.hf.space/ || true
+          
+          # 2. English Space Ping
+          curl -s -o /dev.null -w "%{http_code}" https://developer-yougesh-kavyanjali-english-backend.hf.space/ || true
+          
+          # 3. Edge-TTS Space Ping
+          # curl -s -o /dev.null -w "%{http_code}" https://YOUR-EDGE-SPACE-URL.hf.space/ || true
+          
+          echo "✅ All Spaces Pinged Successfully! No Sleep Tonight!"
