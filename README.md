@@ -30,7 +30,8 @@ It ensures that when users request poem narrations in the **Kavyanjali Android A
 | :--- | :--- | :--- |
 | **Hindi Backend** | Hindi (Kokoro TTS / Edge) | `developer-yougesh-kavyanjali-hindi-backend.hf.space` |
 | **English Backend** | English (Kokoro TTS / Edge) | `developer-yougesh-kavyanjali-english-backend.hf.space` |
-| **Universal Edge Worker** | Multi-Voice + BGM Overlay | `developer-yougesh-kavyanjali-edge-backend.hf.space` |
+| **Edge English Worker** | English-Male/Female + BGM Overlay | `developer-yougesh-kavyanjali-edge-backend.hf.space` |
+| **Edge Hindi Worker** | Hindi-Male/Female + BGM Overlay | `developer-yougesh-kavyanjali-edge-backend.hf.space` |
 
 ---
 
