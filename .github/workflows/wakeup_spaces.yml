@@ -21,6 +21,6 @@ jobs:
           curl -s -o /dev.null -w "%{http_code}" https://developer-yougesh-kavyanjali-english-backend.hf.space/ || true
           
           # 3. Edge-TTS Space Ping
-          # curl -s -o /dev.null -w "%{http_code}" https://YOUR-EDGE-SPACE-URL.hf.space/ || true
+          # curl -s -o /dev.null -w "%{http_code}" https://huggingface.co/spaces/developer-yougesh/Kavyanjali-edge-backend/ || true
           
           echo "✅ All Spaces Pinged Successfully! No Sleep Tonight!"
